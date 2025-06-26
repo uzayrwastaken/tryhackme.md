@@ -4,3 +4,29 @@
 -dirb is a tool that uses the Brute force attack method to exploit
 -Now I understand how to use SIEM
 -The purpose of many cybersecurity tools
+-difference between red team and blue team
+
+# Pre security
+
+#Networking
+
+-MAC addresses never change on the device and can be faked
+-Ping is a measure of the time taken of ICMP packets to travel
+-Routers use packet switching to break down pieces of data into smaller chunks called packets
+-Subnetting is the term given to splitting up a network into smaller, miniature networks within itself
+-IP address is made up of four sections called octets
+-Subnets use IP adresses to: 
+-Identify the network address, This address identifies the start of the actual network and is used to identify a network's existence
+-Identify the host address, An IP address here is used to identify a device on the subnet
+-Identify the default gateway, special address assigned to a device on the network that is capable of sending information to another network 
+-32 bits in a subnet(same as IP address)
+-ARP protocol (Address Resolution Protocol), is the technology that is responsible for allowing devices to identify themselves on a network
+-ARP allows a device to associate its MAC address with an IP address on the network by using ARP request and ARP reply
+-In the context of ARP, this cache stores the identifiers of other devices on the network
+-IP addresses can be assigned either manually, by entering them physically into a device, or automatically and most commonly by using a DHCP server
+-When a device connects to a network, if it has not already been manually assigned an IP address, it sends out a request (DHCP Discover) to see if any DHCP servers are on the network
+- The DHCP server then replies back with an IP address the device could use (DHCP Offer)
+- The device then sends a reply confirming it wants the offered IP Address (DHCP Request)
+-the DHCP server sends a reply acknowledging this has been completed, and the device can start using the IP Address (DHCP ACK).
+-OSI model (or Open Systems Interconnection Model),  provides a framework dictating how all networked devices will send, receive and interpret data.(has 7 layers)
+-Encapsulation is the term for when pieces of info get added to data
