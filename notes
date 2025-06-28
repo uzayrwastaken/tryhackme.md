@@ -43,3 +43,91 @@
 -Packets and frames are small pieces of data that
 -Packet is used when IP addresses are involved
 -TCP is connection based
+
+#How the web works
+-DNS (Domain Name System) provides a simple way for us to communicate with devices on the internet without remembering complex numbers
+-A TLD is the most righthand part of a domain name. So, for example, the tryhackme.com TLD is .com
+-When registering a domain name, the second-level domain is limited to 63 characters + the TLD and can only use a-z 0-9 and hyphens (tryhackme is the second level)
+-A subdomain sits on the left-hand side of the Second-Level Domain using a period to separate it
+-Max character length of a domain is 253
+-A Record resolve to IPv4 addresses, for example 104.26.10.229
+-AAAA Record resolve to IPv6 addresses, for example 2606:4700:20::681a:be5
+-CNAME Record resolve to another domain name, for example, TryHackMe's online shop has the subdomain name store.tryhackme.com which returns a CNAME record shops.shopify.com
+-MX Record resolve to the address of the servers that handle the email for the domain you are querying
+-TXT Record are free text fields where any text-based data can be stored
+
+#DNS request
+-Your computer checks its local DNS cache first — if it doesn’t have the domain saved, it asks the Recursive DNS server
+-The Recursive DNS server checks its own cache — if it finds the result, it sends it back to your device
+-If not, the Recursive server asks the Root DNS server, which redirects it to the right TLD
+-The TLD server sends the Recursive server to the Authoritative Name Server, which knows the exact IP of the domain
+-The Authoritative Name Server returns the DNS record, which gets cached by the Recursive server and sent back to your device
+
+#HTTP in detail
+-HTTP is the set of rules used for communicating with web servers for the transmitting of webpage data, whether that is HTML, Images, Videos, etc
+-HTTPS is the secure version of HTTP. HTTPS data is encrypted so it not only stops people from seeing the data you are receiving and sending
+-URL is predominantly an instruction on how to access a resource on the internet
+-Scheme: This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP (File Transfer Protocol)
+-User: Some services require authentication to log in, you can put a username and password into the URL to log in
+-Host: The domain name or IP address of the server you wish to access
+-Port: The Port that you are going to connect to, usually 80 for HTTP and 443 for HTTPS, but this can be hosted on any port between 1 - 65535
+-Path: The file name or location of the resource you are trying to access
+-Query String: Extra bits of information that can be sent to the requested path. For example, /blog?id=1 would tell the blog path that you wish to receive the blog article with the id of 1
+-Fragment: This is a reference to a location on the actual page requested
+-GET Request used for getting information from a web server
+-POST Request used for submitting data to the web server and potentially creating new records
+-PUT Request used for submitting data to a web server to update information
+-DELETE Request used for deleting information/records from a web server
+
+#HTTP status codes
+-100-199 Information Response	These are sent to tell the client the first part of their request has been accepted and they should continue sending the rest of their request. These codes are no longer very common.
+-200-299 Success This range of status codes is used to tell the client their request was successful.
+-300-399  Redirection	These are used to redirect the client's request to another resource. This can be either to a different webpage or a different website altogether.
+-400-499  Client Errors	Used to inform the client that there was an error with their request.
+-500-599  Server Errors	This is reserved for errors happening on the server-side and usually indicate quite a major problem with the server handling the request.
+
+# Common codes
+-200 - OK	The request was completed successfully.
+-201 - Created	A resource has been created (for example a new user or new blog post).
+-301 - Moved Permanently	This redirects the client's browser to a new webpage or tells search engines that the page has moved somewhere else and to look there instead.
+-302 - Found	Similar to the above permanent redirect, but as the name suggests, this is only a temporary change and it may change again in the near future.
+-400 - Bad Request	This tells the browser that something was either wrong or missing in their request. This could sometimes be used if the web server resource that is being requested expected a certain parameter that the client didn't send.
+-401 - Not Authorised	You are not currently allowed to view this resource until you have authorised with the web application, most commonly with a username and password.
+-403 - Forbidden	You do not have permission to view this resource whether you are logged in or not.
+-405 - Method Not Allowed	The resource does not allow this method request, for example, you send a GET request to the resource /create-account when it was expecting a POST request instead.
+-404 - Page Not Found	The page/resource you requested does not exist.
+-500 - Internal Service Error	The server has encountered some kind of error with your request that it doesn't know how to handle properly.
+-503 - Service Unavailable This server cannot handle your request as it's either overloaded or down for maintenance.
+
+#﻿These are headers that are sent from the client (usually your browser) to the server
+-Headers are additional bits of data you can send to the web server when making requests.
+-Host: Some web servers host multiple websites so by providing the host headers you can tell it which one you require, otherwise you'll just receive the default website for the server
+-User-Agent: This is your browser software and version number, telling the web server your browser software helps it format the website properly for your browser
+-Content-Length: When sending data to a web server such as in a form, the content length tells the web server how much data to expect in the web request. This way the server can ensure it isn't missing any data
+-Accept-Encoding: Tells the web server what types of compression methods the browser supports so the data can be made smaller for transmitting over the internet
+-Cookie: Data sent to the server to help remember your information
+
+#These are the headers that are returned to the client from the server after a request
+-Set-Cookie: Information to store which gets sent back to the web server on each request 
+-Cache-Control: How long to store the content of the response in the browser's cache before it requests it again
+-Content-Type: This tells the client what type of data is being returned
+-Content-Encoding: What method has been used to compress the data to make it smaller when sending it over the internet
+
+-cookies are small pieces of data that is stored on your computer
+- web server is just a dedicated computer somewhere else in the world that handles your requests
+-Front End (Client-Side) - the way your browser renders a website
+-Back End (Server-Side) - a server that processes your request and returns a response
+-HyperText Markup Language (HTML) is the language websites are written in
+-Elements (also known as tags) are the building blocks of HTML pages and tells the browser how to display content
+
+#HTML
+-The <!DOCTYPE html> defines that the page is a HTML5 document. This helps with standardisation across different browsers and tells the browser to use HTML5 to interpret the page.
+-The <html> element is the root element of the HTML page - all other elements come after this element.
+-The <head> element contains information about the page (such as the page title)
+-The <body> element defines the HTML document's body; only content inside of the body is shown in the browser.
+-The <h1> element defines a large heading
+-The <p> element defines a paragraph
+-There are many other elements (tags) used for different purposes. For example, there are tags for buttons (<button>), images (<img>), lists, and much more
+
+#Javacript
+ -JavaScript is used to control the functionality of web pages - without JavaScript, a page would not have interactive elements
