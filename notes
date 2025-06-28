@@ -30,3 +30,16 @@
 -the DHCP server sends a reply acknowledging this has been completed, and the device can start using the IP Address (DHCP ACK).
 -OSI model (or Open Systems Interconnection Model),  provides a framework dictating how all networked devices will send, receive and interpret data.(has 7 layers)
 -Encapsulation is the term for when pieces of info get added to data
+-Graphical User Interface (GUI) is  for users to interact with data sent or received
+-Presentation layer's main purpose is translating
+-Inside every network-enabled computer is a Network Interface Card (NIC) which comes with a unique MAC address to identify it
+-routing simply determines the most optimal path in which these chunks of data should be sent.
+-Network layer is where the routing and re-assembly of data takes place
+- OSPF (Open Shortest Path First)
+- RIP (Routing Information Protocol)
+- Transmission Control Protocol (TCP) incorporates error checking into its design so TCP can guarantee that data sent from the small chunks in the session layer has then been received and reassembled in the same order.
+- User Datagram Protocol(UDP), doesn't care if the data is received.
+- session layer (layer 5) will begin to create and maintain the connection to other computer for which the data is destined
+-Packets and frames are small pieces of data that
+-Packet is used when IP addresses are involved
+-TCP is connection based
