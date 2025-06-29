@@ -131,3 +131,23 @@
 
 #Javacript
  -JavaScript is used to control the functionality of web pages - without JavaScript, a page would not have interactive elements
+
+- Load balancers provide two main features, ensuring high traffic websites can handle the load and providing a failover if a server becomes unresponsive
+-CDN (Content Delivery Networks) allows you to host static files from your website, such as JavaScript, CSS, Images, Videos, and host them across thousands of servers all over the world
+-Webservers can communicate with databases to store and recall data from them
+-WAF (Web Application Firewall) sits between your web request and the web server; its primary purpose is to protect the webserver from hacking or denial of service attacks
+-A web server is a software that listens for incoming connections and then utilises the HTTP protocol to deliver web content to its clients
+-Web servers can host multiple websites with different domain names; to achieve this, they use virtual hosts
+
+# Linux fundamentals
+-The name "Linux" is actually an umbrella term for multiple OS's that are based on UNIX (another operating system)
+-commands
+-echo:	Output any text that we provide
+-whoami:	Find out what user we're currently logged in as!
+-ls:	listing
+-cd:	change directory
+-cat:	concatenate
+-pwd:	print working directory
+-"Cat" is short for concatenating & is a fantastic way for us to output the contents of files (not just text files!)
+-find is efficient must use like this find -name example.txt or find -name *.txt (finds everything that is a text file)
+-The grep command allows us to search the contents of files for specific values that we are looking for
