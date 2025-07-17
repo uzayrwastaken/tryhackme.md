@@ -172,7 +172,9 @@
 - you need to provide the -R switch alongside the name of the directory you wish to remove
 -Switching between users on a Linux install is easy work thanks to the su command
 - The etc folder (short for etcetera) is a commonplace location to store system files that are used by your operating system
-
+- /var stores data that is frequently accessed or written by services or applications running on the system
+- /root folder is actually the home for the "root" system user
+- /tmp directory is volatile and is used to store data that is only needed to be accessed once or twice
 
 
 
