@@ -175,7 +175,8 @@
 - /var stores data that is frequently accessed or written by services or applications running on the system
 - /root folder is actually the home for the "root" system user
 - /tmp directory is volatile and is used to store data that is only needed to be accessed once or twice
-
+- To create or edit a file using nano, we simply use nano filename
+-
 
 
 
