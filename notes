@@ -176,7 +176,11 @@
 - /root folder is actually the home for the "root" system user
 - /tmp directory is volatile and is used to store data that is only needed to be accessed once or twice
 - To create or edit a file using nano, we simply use nano filename
--
+- ^ is control key
+- wget allows us to download files from the web via HTTP -- as if you were accessing the file in your browser, e.g wget address of resource
+- Secure copy, or SCP allows you to transfer files between two computers using the SSH protocol to provide both authentication and encryption
+- SCP works on a model of source and destination
+
 
 
 
